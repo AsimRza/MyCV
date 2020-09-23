@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+body
+{
+	font-family: 'Nunito', srans-seif;
+		background:url('../images/bg-pattern.png');
+}
+.head-container
+{
+background: red;
+height: 87vh
+}
+header
+{
+ height: 87vh;
+ background-image: url('../images/bg.jpg');
+ background-size: cover;
+ background-position: center;
+ position: relative;
+
+}
+header canvas
+{
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+}
+.overlay
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	background: rgba(0,0,0,0.7);
+}
+.head-icons
+{
+	margin-left: 20px;
+}
+.head-icons i
+{
+	margin-right: 5px;
+	line-height: 30px;
+	color: #007bff;
+	font-size: 27px !important;
+	transition: color 0.5s; 
+}
+.head-icons i:hover
+{
+	color: lightblue;
+	cursor: pointer;
+}
+.navbar-brand
+{
+	font-size:30px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.navbar-nav a
+{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.hero-text
+{
+	margin-top: 170px;
+}
+.head-text
+{
+	font-weight: 550;
+	color: white;
+}
+
+.head-text img
+{
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+.head-contact-buttons a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	background: #007bff;
+	color: white;
+	border-radius: 20px;
+	margin-left: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.head-contact-buttons a:hover
+{
+	transition: 0.5s linear;
+	background: #3b91ed;
+}
+/*-----Personal-Detail-----*/
+
+#Personal-Detail img
+{
+	width: 160px;
+	height: auto;
+}
+.personal-detail
+{
+	padding:25px 50px 25px;
+	background: white;
+	border-radius: 15px;
+	box-shadow: 0.5px 0.5px 10px #999,-0.5px -0.5px 10px #999;
+	transform: translateY(-54%);
+	position: relative;
+	z-index: 100;
+}
+.persondt-left
+{
+	background: #f6f7fa;
+	padding: 10px 25px;
+	border-radius: 10px;
+
+}
+.persondt-left span:hover
+{
+	cursor: pointer;
+}
+.persondt-left h5
+{
+
+	padding-bottom: 10px;
+	border-bottom:3px dotted #d4dae1;
+}
+.line
+{
+	word-break: keep-all;
+    word-wrap: keep-all;
+	color:#007bff
+}
+/*--------Skills---------*/
+
+#Skills img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.skills-bar p
+{
+font-weight: bolder;
+margin-bottom: 0px;
+margin-top: 20px;
+margin-left: 2px;
+text-transform: uppercase;
+}
+.progress
+{
+	position: relative;
+}
+.progress-bar
+{
+	border-radius: 5px;
+	animation-name: animate;
+	animation-duration: 3s;	
+	
+	animation-fill-mode: forwards;
+}
+/*@keyframes animate
+{
+	from 
+	{
+	width: 0px;
+	}
+	to
+	{
+	width: 75%;
+	}
+}*/
+/*------Experience,Education---*/
+#ExperEduc
+{
+	
+	padding-bottom: 20px;
+	
+}
+#ExperEduc .timeline
+{
+ list-style: none;
+ position: relative;
+}
+#ExperEduc .timeline:before
+{
+	content: '';
+ 	background: #007bff;
+ 	display: inline-block;
+ 	position: absolute;
+ 	left: 9px;
+ 	width: 2px;
+ 	height: 100%;
+ 	z-index: 1;
+}
+.timeline li
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	background: #fff;
+	padding: 0px 15px 15px;
+}
+.timeline li h4
+{
+	background:#007bff;
+	color: #fff;
+	padding: 5px 0px 5px 20px;
+	font-size: 20px;
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+}
+.timeline li h4 span
+{
+	font-weight: bolder;
+	color: #ccc;
+
+}
+.timeline li:before
+{
+	content: '';
+	background: #fff;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border:3px solid #007bff;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+
+}
+/*-----Services-----*/
+.services
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.services h1
+{
+	margin-bottom: 10px;
+
+}
+.services-box
+{
+	background: #f9f9f9;
+	padding: 10px;
+	margin-top: 20px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+    box-shadow: 0.5px 0.5px 13px #999;
+}
+.services-box .fas
+{
+	margin: 0px 10px;
+	font-size: 20px;
+
+}
+.services-box span
+{
+	margin: 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.services-box p
+{
+	font-size: 15px;
+	margin-top: 20px;
+	color: #777;
+}
+.services-box:hover
+{
+	background: #0064cf;
+	color: #fff;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	transition: 0.7s;
+	
+}
+.services-box:hover p
+{
+	color: #fff;
+}
+
+.contact
+{
+	padding-top: 50px;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/background-2.jpg');
+	background-size: cover;
+	background-position:center; 
+	background-attachment: fixed;	
+	color: #fff;
+}
+.contact .row
+{
+	padding: 30px 0;
+	font-size: 22px
+}
+.contact .row .col-md-4 .fas,
+.contact .row .col-md-4 .fab
+{
+padding: 10px;
+font-size: 40px;
+}
+.contact .btn
+{
+	padding: 10px 25px;
+	margin: 5px;
+	border-radius: 30px;
+	border: 2px solid #fff;
+	background: transparent;
+
+}
+.contact .btn:focus
+{
+	box-shadow: none;
+}
+.contact .btn:hover
+{
+	border: 2px solid #000 !important;
+	background: #000 !important;
+	transition: 0.6s;
+}
+
+.contact .btn .fas,
+.contact .btn .fab
+{
+	margin-right:10px;
+}
+.footer
+{
+	background: #000;
+	height: 50px;
+	margin-top: 50px;
+	color: #fff;
+	padding-top: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+
+}
+.footer p
+{
+
+	transition: 0.6s;
+}
+.footer p:hover
+{
+	color: #007bff;
+	font-weight: 500;	
+}
+.fa-heart
+{
+	color: red;
+}
+/* ------ Social Icons -----*/
+.social-icons
+{
+	top: 50%;
+	transform: translateY(-50%);
+	position: sticky;
+	z-index: 1;
+	width: 80px;
+}
+.social-icons ul
+{
+	padding: initial;
+}
+.social-icons ul li
+{
+height: 40px;
+width:40px;
+list-style-type: none;
+padding-left: 12px;
+padding-top: 8px;
+margin-top: 5px;
+color: #fff;
+background: #000;
+}
+.social-icons ul li a
+{
+	color: #fff;
+}
+.social-icons ul li:hover
+{
+padding-left: 20px;
+width: 70px;
+transition: 0.5s linear;
+}

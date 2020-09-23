@@ -1,0 +1,24 @@
+@media screen and (max-width: 990px)
+{
+	.head-icons
+	{
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	.hero-text
+	{
+	margin-top: 80px;
+	}
+	.personal-detail
+	{
+		transform: translateY(-20%);
+		text-align: center;
+	}
+	.personal-detail  .col-xl-9
+	{
+		margin-top: 20px;
+	}
+	
+}
